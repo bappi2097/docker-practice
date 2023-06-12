@@ -1,0 +1,8 @@
+version: "1"
+services:
+  redis-server:
+    image: "redis"
+  visitor-count:
+    build: .
+    ports:
+      - "4000:8081"
