@@ -3,6 +3,7 @@ services:
   redis-server:
     image: "redis"
   visitor-count:
+    restart: always
     build: .
     ports:
       - "4000:8081"
